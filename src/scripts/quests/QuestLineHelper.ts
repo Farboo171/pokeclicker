@@ -1,7 +1,7 @@
 /**
  * Static class used to handle Quest Lines
  */
-class QuestLineHelper {
+class  {
 
     // Kanto QuestLines
     public static createTutorial() {
@@ -1265,6 +1265,53 @@ class QuestLineHelper {
         App.game.quests.questLines().push(minasTrialAlolaQuestLine);
     }
 
+    public static createSilvallyTypesQuestLine() {
+        const SilvallyTypesQuestLine = new Questline ('Typing some Memories', 'Help Gladion restore his Silvally memories', new MultiRequirement([new ObtainedPokemonRequirement('Silvally (Normal)'), new GymBadgeRequirement(BadgeEnums.Elite_AlolaChampion)]) , GameConstants.BulletinBoards.Alola);
+
+        const talkToGladion1 = new TalkToNPCQuest(SilvallyGladion1, 'Talk to Gladion in the Pokémon League Alola.');
+        SilvallyTypesQuestLine.addQuest(talkToGladion1);
+
+        const createMultiTypeCaptureQuest = (types: Array<PokemonType>, description: string) => {
+            const quest = new MultipleQuestsQuest(types.map(type => {
+                return new CapturePokemonTypesQuest(100, undefined, type);
+            }), description);
+            SilvallyTypesQuestLine.addQuest(quest);
+        };
+
+        createMultiTypeCaptureQuest([PokemonType.Fighting, PokemonType.Rock, PokemonType.Dark, PokemonType.Fairy], 'Get some essence before looking for the memories. Defeat 100 Fighting, Rock, Dark and Fairy Types');
+
+        const talkToMelemeleLocals = new TalkToNPCQuest(SilvallyHala, 'Talk to the Melemele Island locals to find out more about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToMelemeleLocals);
+
+        const talkToAkalaLocals = new TalkToNPCQuest(SilvallyOlivia, 'Talk to Akala Island locals to find out more about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToAkalaLocals);
+
+        const talkToUlaulaLocals = new TalkToNPCQuest(SilvallyNanu, 'Talk to Ula\'ula Island locals to find out more about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToUlaulaLocals);
+
+        const talkToPoniLocals = new TalkToNPCQuest(SilvallyMina, 'Talk to Poni Island locals to find out more about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToPoniLocals);
+
+        const SilvallyGladionReward1 = () => {
+            App.game.party.gainPokemonById(773.06);
+            App.game.party.gainPokemonById(773.12);
+            App.game.party.gainPokemonById(773.15);
+            App.game.party.gainPokemonById(773.17);
+            Notifier.notify({
+                title: SilvallyTypesQuestLine.name,
+                message: 'Gladion awarded you 4 Silvally\'s!',
+                type: NotificationConstants.NotificationOption.success,
+                timeout: 3e4,
+            });
+        };
+
+        const talkToGladion2 = new TalkToNPCQuest(SilvallyGladion2, 'Talk to Gladion in the Pokémon League Alola and tell him what you found out about Silvally\'s memories.', SilvallyGladionReward1);
+        SilvallyTypesQuestLine.addQuest(talkToGladion2);
+
+        App.game.quests.questLines().push(SilvallyTypesQuestLine);
+
+    }
+
     public static createUltraBeastQuestLine() {
         const UltraBeastQuestLine = new QuestLine('Ultra Beast Hunt', 'Track down the mysterious Ultra Beasts', new GymBadgeRequirement(BadgeEnums.Elite_AlolaChampion), GameConstants.BulletinBoards.Alola);
 
@@ -2241,6 +2288,7 @@ class QuestLineHelper {
         this.createAshKetchumQuestLine();
         this.createSkullAetherAlolaQuestLine();
         this.createMinasTrialAlolaQuestLine();
+        this.createSilvallyTypesQuestLine();
         this.createUltraBeastQuestLine();
         this.createMagikarpJumpQuestLine();
         this.createDarkestDayQuestLine();

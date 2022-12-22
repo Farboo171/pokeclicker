@@ -4474,6 +4474,45 @@ const ProfKukui = new ProfNPC('Prof. Kukui',
     'With that, you can stamp your ticket to the noble Galar region!',
     'assets/images/npcs/Professor Kukui.png');
 
+const SilvallyGladion1 = new NPC('Gladion', [
+    'TODO Silvally story'
+    'TODO asking player for help'
+], {
+    Image: 'assets/images/temporaryBattle/Gladion.png',
+    requirement: new QuestLineStepCompletedRequirement('Typing some Memories', 1, GameConstants.AchievementOption.less),
+});
+const SilvallyHala = new NPC('Kahuna Hala', [
+    'TODO discovered memory piece/full memory'
+], {
+    image: 'assets/images/gymLeaders/Hala.png'
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 4, GameConstants.AchievementOption.less)])
+});
+const SilvallyOlivia = new NPC('Kahuna Olivia', [
+    'TODO discovered memory piece/full memory'
+], {
+    image: 'assets/images/gymLeaders/Olivia.png'
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 5, GameConstants.AchievementOption.less)])
+});
+const SilvallyNanu = new NPC('Kahuna Nanu', [
+    'TODO discovered memory piece/full memory'
+], {
+    image: 'assets/images/gymLeaders/Nanu.png'
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 6, GameConstants.AchievementOption.less)])
+});
+const SilvallyMina = new NPC('Captain Mina', [
+    'TODO discovered memory piece/full memory'
+], {
+    image: 'assets/images/gymLeaders/Mina.png'
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.less)])
+});
+const SilvallyGladion2 = new NPC('Gladion', [
+    'TODO thankings the player'
+    'TODO awarding the player'
+], {
+    image: 'assets/images/temporaryBattle/Gladion.png'
+    requirement: new  MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.less)])
+});
+
 const RoadsideMotelLooker1 = new NPC('Looker', [
     'I\'m very grateful that you accepted my invitation. My name is Looker. This here is my boss, Chief Anabel, head of the UB Taskforce.',
     'Ever since the incident at Aether Paradise, where you encountered UB-01 Symbiont, also known as Nihilego, we have heard reports of other Symbiont appearing in Alola. And other types of UBs too.',
