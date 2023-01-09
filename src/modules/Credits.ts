@@ -75,7 +75,7 @@ export const SpriteCredits: Credit[] = [
             'Plumeria',
             'Professor Kukui',
             'Rising Star (male)',
-            'Ryuki'
+            'Ryuki',
             'Sightseer (female)',
             'Sophocles',
             'Teacher (Gen 7)',
