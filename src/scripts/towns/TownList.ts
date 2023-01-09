@@ -5021,6 +5021,9 @@ TownList['Lush Jungle'] = new DungeonTown(
     [LushJungleShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 8)],
     [TemporaryBattleList['Captain Mallow'], TemporaryBattleList['Captain Lana']]
+    {
+        npcs: [MallowSilvally1],
+    }
 );
 TownList['Diglett\'s Tunnel'] = new DungeonTown(
     'Diglett\'s Tunnel',
@@ -5047,6 +5050,9 @@ TownList['Hokulani Observatory'] = new DungeonTown(
     [HokulaniObservatoryShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 22)],
     [TemporaryBattleList['Captain Sophocles']]
+    {
+        npcs: [SophoclesSilvally1],
+    }
 );
 TownList['Thrifty Megamart'] = new DungeonTown(
     'Thrifty Megamart',
