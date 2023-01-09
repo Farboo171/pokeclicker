@@ -1266,7 +1266,7 @@ class  {
     }
 
     public static createSilvallyTypesQuestLine() {
-        const SilvallyTypesQuestLine = new Questline ('Typing some Memories', 'Help Gladion restore his Silvally memories', new MultiRequirement([new ObtainedPokemonRequirement('Silvally (Normal)'), new GymBadgeRequirement(BadgeEnums.Elite_AlolaChampion)]) , GameConstants.BulletinBoards.Alola);
+        const SilvallyTypesQuestLine = new QuestLine('Typing some Memories', 'Help Gladion restore his Silvally memories', new MultiRequirement([new ObtainedPokemonRequirement('Silvally (Normal)'), new GymBadgeRequirement(BadgeEnums.Elite_AlolaChampion)]) , GameConstants.BulletinBoards.Alola);
 
         const talkToGladion1 = new TalkToNPCQuest(SilvallyGladion1, 'Talk to Gladion in the Pokémon League Alola.');
         SilvallyTypesQuestLine.addQuest(talkToGladion1);
@@ -1293,10 +1293,10 @@ class  {
         SilvallyTypesQuestLine.addQuest(talkToPoniLocals);
 
         const SilvallyGladionReward1 = () => {
-            App.game.party.gainPokemonByName('Silvally (Fighting)');
-            App.game.party.gainPokemonByName('Silvally (Rock)');
-            App.game.party.gainPokemonByName('Silvally (Dark)');
-            App.game.party.gainPokemonByName('Silvally (Fairy)');
+            App.game.party.getPokemonByName('Silvally (Fighting)');
+            App.game.party.getPokemonByName('Silvally (Rock)');
+            App.game.party.getPokemonByName('Silvally (Dark)');
+            App.game.party.getPokemonByName('Silvally (Fairy)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Gladion awarded you 4 Silvally\'s!',
