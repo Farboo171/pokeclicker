@@ -818,7 +818,7 @@ export enum PokemonItemType {
     'Silvally (Electric)',
     'Silvally (Ground)',
     'Silvally (Ice)',
-    'Silvally (Dragon)',
+    'Silvally (Fire)',
     'Dracozolt',
     'Arctozolt',
     'Dracovish',

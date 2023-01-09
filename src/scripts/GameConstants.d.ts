@@ -358,7 +358,7 @@ namespace GameConstants {
         'Silvally (Electric)',
         'Silvally (Ground)',
         'Silvally (Ice)',
-        'Silvally (Dragon)',
+        'Silvally (Fire)',
         'Dracozolt',
         'Arctozolt',
         'Dracovish',
