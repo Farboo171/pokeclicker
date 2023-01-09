@@ -1308,7 +1308,7 @@ class  {
         const talkToGladion2 = new TalkToNPCQuest(SilvallyGladion2, 'Talk to Gladion in the Pokémon League Alola and tell him what you found out about Silvally\'s memories.', SilvallyGladionReward1);
         SilvallyTypesQuestLine.addQuest(talkToGladion2);
 
-        createMultiTypeCaptureQuest([PokemonType.Water, PokemonType.Grass, PokemonType.Electric, PokemonType.Ground, PokemonType.Ice, PokemonType.Dragon], 'Get some essence before looking for more Silvally\'s memories. Capture 100 Water, Grass, Electric, Ground, Ice and Dragon types.');
+        createMultiTypeCaptureQuest([PokemonType.Water, PokemonType.Grass, PokemonType.Fire, PokemonType.Electric, PokemonType.Ground, PokemonType.Ice], 'Get some essence before looking for more Silvally\'s memories. Capture 100 Water, Grass, Electric, Ground, Ice and Dragon types.');
 
         const talkToLanaSilvally = new TalkToNPCQuest(LanaSilvally1, 'Talk to Lana in Brooklet Hill to find out if she knows something about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToLanaSilvally);
@@ -1322,11 +1322,32 @@ class  {
         const catchSilvallyGrass = new CaptureSpecificPokemonQuest('Silvally (Grass)', 'Trade Mallow some Quest Points for a Silvally.', 1, false, 0, undefined);
         SilvallyTypesQuestLine.addQuest(catchSilvallyGrass);
 
+        const talkToKiaweSilvally = new TalkToNPCQuest(KiaweSilvally1, 'Talk to Kiawe in Wela Volcano Park to find out if he knows about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToKiaweSilvally);
+
+        const catchSilvallyFire = new CaptureSpecificPokemonQuest('Silvally (Fire)', 'Trade Kiawe some Battle Points for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyFire);
+
         const talkToSophoclesSilvally = new TalkToNPCQuest(SophoclesSilvally1, 'Talk to Sophocles in Hokulani Observatory to find out if he knows about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToSophoclesSilvally);
 
         const catchSilvallyElectric = new CaptureSpecificPokemonQuest('Silvally (Electric)', 'Trade Sophocles some Pokédollars for a Silvally.', 1, false, 0, undefined);
         SilvallyTypesQuestLine.addQuest(catchSilvallyElectric);
+
+        const talkToVeteranSilvally = new TalkToNPCQuest(VeteranSilvally1, 'Talk to Veteran Aristo in Mount Lanakila to find out if he knows about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToVeteranSilvally);
+
+        const catchSilvallyIce = new CaptureSpecificPokemonQuest('Silvally (Ice)', 'Trade Veteran Aristo some Diamonds for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyIce);
+
+        const talkToHapuSilvally = new TalkToNPCQuest(HapuSilvally1, 'Talk to Hapu in Exeggutor Island to find out if she knows about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToHapuSilvally);
+
+        const catchSilvallyGround = new CaptureSpecificPokemonQuest('Silvally (Ground)', 'Trade Hapu some Farm Points for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyGround);
+
+        const talkToGladion3 = new TalkToNPCQuest(SilvallyGladion3, 'Go show Gladion those Silvallys in the Pokémon League Alola');
+        SilvallyTypesQuestLine.addQuest(talkToGladion3);
 
         App.game.quests.questLines().push(SilvallyTypesQuestLine);
 
