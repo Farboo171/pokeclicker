@@ -1278,25 +1278,25 @@ class  {
             SilvallyTypesQuestLine.addQuest(quest);
         };
 
-        createMultiTypeCaptureQuest([PokemonType.Fighting, PokemonType.Rock, PokemonType.Dark, PokemonType.Fairy], 'Get some essence before looking for the memories. Defeat 100 Fighting, Rock, Dark and Fairy Types');
+        createMultiTypeCaptureQuest([PokemonType.Fighting, PokemonType.Rock, PokemonType.Dark, PokemonType.Fairy], 'Get some essence before looking for Silvally\'s memories. Capture 100 Fighting, Rock, Dark and Fairy Types');
 
         const talkToMelemeleLocals = new TalkToNPCQuest(SilvallyHala, 'Talk to the Melemele Island locals to find out more about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToMelemeleLocals);
 
-        const talkToAkalaLocals = new TalkToNPCQuest(SilvallyOlivia, 'Talk to Akala Island locals to find out more about Silvally\'s memories.');
+        const talkToAkalaLocals = new TalkToNPCQuest(SilvallyOlivia, 'Talk to the Akala Island locals to find out more about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToAkalaLocals);
 
-        const talkToUlaulaLocals = new TalkToNPCQuest(SilvallyNanu, 'Talk to Ula\'ula Island locals to find out more about Silvally\'s memories.');
+        const talkToUlaulaLocals = new TalkToNPCQuest(SilvallyNanu, 'Talk to the Ula\'ula Island locals to find out more about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToUlaulaLocals);
 
-        const talkToPoniLocals = new TalkToNPCQuest(SilvallyMina, 'Talk to Poni Island locals to find out more about Silvally\'s memories.');
+        const talkToPoniLocals = new TalkToNPCQuest(SilvallyMina, 'Talk to the Poni Island locals to find out more about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToPoniLocals);
 
         const SilvallyGladionReward1 = () => {
-            App.game.party.gainPokemonById(773.06);
-            App.game.party.gainPokemonById(773.12);
-            App.game.party.gainPokemonById(773.15);
-            App.game.party.gainPokemonById(773.17);
+            App.game.party.gainPokemonByName('Silvally (Fighting)');
+            App.game.party.gainPokemonByName('Silvally (Rock)');
+            App.game.party.gainPokemonByName('Silvally (Dark)');
+            App.game.party.gainPokemonByName('Silvally (Fairy)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Gladion awarded you 4 Silvally\'s!',
@@ -1307,6 +1307,14 @@ class  {
 
         const talkToGladion2 = new TalkToNPCQuest(SilvallyGladion2, 'Talk to Gladion in the Pokémon League Alola and tell him what you found out about Silvally\'s memories.', SilvallyGladionReward1);
         SilvallyTypesQuestLine.addQuest(talkToGladion2);
+
+        createMultiTypeCaptureQuest([PokemonType.Water, PokemonType.Grass, PokemonType.Electric, PokemonType.Ground, PokemonType.Ice, PokemonType.Dragon], 'Get some essence before looking for more Silvally\'s memories. Capture 100 Water, Grass, Electric, Ground, Ice and Dragon types.');
+
+        const talkToLanaSilvally = new TalkToNPCQuest(LanaSilvally1, 'Talk to Lana in Brooklet Hill to find out if she knows something about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToLanaSilvally);
+
+        const catchSilvallyWater = new CaptureSpecificPokemonQuest('Silvally (Water)', 'Trade Lana some Dungeon Tokens for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyWater);
 
         App.game.quests.questLines().push(SilvallyTypesQuestLine);
 

@@ -4322,6 +4322,10 @@ const PaniolaTownShop = new Shop([
     ItemList.Fire_egg,
     ItemList.Water_egg,
 ]);
+const BrookletHillShop = new Shop([
+    ItemList['Silvally (Water)'],
+],    'Lana’s Trade', [new QuestLineStepCompletedRequirement('Typing some Memories', 9),
+]);
 const RoadsideMotelShop = new Shop([
     ItemList.Beastball,
 ], 'Looker’s Exchange', [new QuestLineStepCompletedRequirement('Ultra Beast Hunt', 1),
@@ -4512,6 +4516,12 @@ const SilvallyGladion2 = new NPC('Gladion', [
     image: 'assets/images/temporaryBattle/Gladion.png'
     requirement: new  MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.less)])
 });
+const LanaSilvally1 = new NPC('Lana', [
+    'TODO reason needed for dt'
+], {
+    image: 'assets/images/gymLeaders/Lana.png'
+    requirement: new MultiRequirement([new QuestLinestepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestlineStepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.less)])
+});
 
 const RoadsideMotelLooker1 = new NPC('Looker', [
     'I\'m very grateful that you accepted my invitation. My name is Looker. This here is my boss, Chief Anabel, head of the UB Taskforce.',
@@ -4636,7 +4646,7 @@ TownList['Iki Town'] = new Town(
     [IkiTownShop],
     {
         requirements: [new TemporaryBattleRequirement('Hau 1')],
-        npcs: [IkiKahuna],
+        npcs: [IkiKahuna],[SilvallyHala]
     }
 );
 TownList['Professor Kukui\'s Lab'] = new Town(
@@ -4714,7 +4724,7 @@ TownList['Konikoni City'] = new Town(
     [KonikoniCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Konikoni City'])],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.alola, 9)],
-        npcs: [KonikoniKahuna],
+        npcs: [KonikoniKahuna],[SilvallyOlivia]
     }
 );
 TownList['Aether Paradise'] = new Town(
@@ -4739,7 +4749,7 @@ TownList['Malie City'] = new Town(
     [MalieCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Malie City']), new MoveToDungeon(dungeonList['Malie Garden']), new DockTownContent()],
     {
         requirements: [new TemporaryBattleRequirement('Ultra Wormhole')],
-        npcs: [MalieKahuna],
+        npcs: [MalieKahuna],[SilvallyNanu]
     }
 );
 TownList['Tapu Village'] = new Town(
@@ -4759,7 +4769,7 @@ TownList['Seafolk Village'] = new Town(
     [SeafolkVillageShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Seafolk Village']), new MoveToDungeon(dungeonList['Mina\'s Houseboat']), new DockTownContent(), TemporaryBattleList['Captain Mina']],
     {
         requirements: [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Aether Foundation'))],
-        npcs: [SeafolkCaptain],
+        npcs: [SeafolkCaptain],[SilvallyMina]
     }
 );
 TownList['Exeggutor Island'] = new Town(
@@ -4789,6 +4799,7 @@ TownList['Pokémon League Alola'] = new Town(
         requirements:[
             new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Mount Lanakila')),
         ],
+        npcs: [SilvallyGladion1], [SilvallyGladion2]
     }
 );
 TownList['A Tree Maybe'] = new Town(
@@ -4970,6 +4981,10 @@ TownList['Brooklet Hill'] = new DungeonTown(
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.AkalaIsland,
     [new TemporaryBattleRequirement('Gladion 1')]
+    {
+        npcs: [LanaSilvally1],
+    }
+
 );
 TownList['Wela Volcano Park'] = new DungeonTown(
     'Wela Volcano Park',
