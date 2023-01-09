@@ -4330,6 +4330,10 @@ const RoadsideMotelShop = new Shop([
     ItemList.Beastball,
 ], 'Looker’s Exchange', [new QuestLineStepCompletedRequirement('Ultra Beast Hunt', 1),
 ]);
+const LushJungleShop = new Shop([
+    ItemList['Silvally (Grass)'],
+],    'Mallow’s Trade', [new QuestLineStepCompletedRequirement('Typing some Memories', 11),
+]);
 const KonikoniCityShop = new Shop([
     ItemList.Pokeball,
     ItemList.Greatball,
@@ -4362,6 +4366,10 @@ const TapuVillageShop = new Shop([
     ItemList.Razor_claw,
     ItemList.Razor_fang,
     ItemList.Ice_stone,
+]);
+    const HokulaniObservatoryShop = new Shop([
+        ItemList['Silvally (Electric)'],
+    ],    'Sophocles’s Trade', [new QuestLineStepCompletedRequirement('Typing some Memories', 13),
 ]);
 const SeafolkVillageShop = new Shop([
     ItemList.Pokeball,
@@ -4520,7 +4528,19 @@ const LanaSilvally1 = new NPC('Lana', [
     'TODO reason needed for dt'
 ], {
     image: 'assets/images/gymLeaders/Lana.png'
-    requirement: new MultiRequirement([new QuestLinestepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestlineStepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLinestepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.more), new QuestlineStepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.less)])
+});
+const MallowSilvally1 = new NPC('Mallow', [
+    'TODO reason needed for qp'
+], {
+    image: 'assets/images/gymLeaders/Mallow.png'
+    requirement: new MultiRequirement([new QuestLinestepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.more), new QuestlineStepCompletedRequirement('Typing some Memories', 10, GameConstants.AchievementOption.less)])
+});
+const SophoclesSilvally1 = new NPC('Sophocles', [
+    'TODO reason needed for money'
+], {
+    image: 'assets/images/gymLeaders/Sophocles.png'
+    requirement: new MultiRequirement([new QuestLinestepCompletedRequirement('Typing some Memories', 11, GameConstants.AchievementOption.more), new QuestlineStepCompletedRequirement('Typing some Memories', 12, GameConstants.AchievementOption.less)])
 });
 
 const RoadsideMotelLooker1 = new NPC('Looker', [
@@ -4980,6 +5000,7 @@ TownList['Brooklet Hill'] = new DungeonTown(
     'Brooklet Hill',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.AkalaIsland,
+    [BrookletHillShop],
     [new TemporaryBattleRequirement('Gladion 1')]
     {
         npcs: [LanaSilvally1],
@@ -4997,6 +5018,7 @@ TownList['Lush Jungle'] = new DungeonTown(
     'Lush Jungle',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.AkalaIsland,
+    [LushJungleShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 8)],
     [TemporaryBattleList['Captain Mallow'], TemporaryBattleList['Captain Lana']]
 );
@@ -5022,6 +5044,7 @@ TownList['Hokulani Observatory'] = new DungeonTown(
     'Hokulani Observatory',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.UlaulaIsland,
+    [HokulaniObservatoryShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 22)],
     [TemporaryBattleList['Captain Sophocles']]
 );

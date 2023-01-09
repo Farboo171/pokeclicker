@@ -1316,6 +1316,18 @@ class  {
         const catchSilvallyWater = new CaptureSpecificPokemonQuest('Silvally (Water)', 'Trade Lana some Dungeon Tokens for a Silvally.', 1, false, 0, undefined);
         SilvallyTypesQuestLine.addQuest(catchSilvallyWater);
 
+        const talkToMallowSilvally = new TalkToNPCQuest(MallowSilvally1, 'Talk to Mallow in Lush Jungle to find out if she knows about Silvally\'s memories');
+        SilvallyTypesQuestLine.addQuest(talkToMallowSilvally);
+
+        const catchSilvallyGrass = new CaptureSpecificPokemonQuest('Silvally (Grass)', 'Trade Mallow some Quest Points for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyGrass);
+
+        const talkToSophoclesSilvally = new TalkToNPCQuest(SophoclesSilvally1, 'Talk to Sophocles in Hokulani Observatory to find out if he knows about Silvally\'s memories.');
+        SilvallyTypesQuestLine.addQuest(talkToSophoclesSilvally);
+
+        const catchSilvallyElectric = new CaptureSpecificPokemonQuest('Silvally (Electric)', 'Trade Sophocles some Pokédollars for a Silvally.', 1, false, 0, undefined);
+        SilvallyTypesQuestLine.addQuest(catchSilvallyElectric);
+
         App.game.quests.questLines().push(SilvallyTypesQuestLine);
 
     }
