@@ -4463,9 +4463,9 @@ const TapuVillageShop = new Shop([
     ItemList.Razor_fang,
     ItemList.Ice_stone,
 ]);
-    const HokulaniObservatoryShop = new Shop([
-        ItemList['Silvally (Electric)'],
-    ],    'Sophocles’s Trade', [new QuestLineStepCompletedRequirement('Typing some Memories', 15),
+const HokulaniObservatoryShop = new Shop([
+    ItemList['Silvally (Electric)'],
+],    'Sophocles’s Trade', [new QuestLineStepCompletedRequirement('Typing some Memories', 15),
 ]);
 const SeafolkVillageShop = new Shop([
     ItemList.Pokeball,
@@ -4592,7 +4592,7 @@ const ProfKukui = new ProfNPC('Prof. Kukui',
     'This is truly an astounding feat! Congratulations on completing the Pokédex!',
     'With that, you can stamp your ticket to the noble Galar region!',
     'assets/images/npcs/Professor Kukui.png');
-
+//Silvally Types NPC
 const SilvallyGladion1 = new NPC('Gladion', [
     'TODO Silvally story',
     'TODO asking the player help',
@@ -4601,80 +4601,102 @@ const SilvallyGladion1 = new NPC('Gladion', [
     requirement: new QuestLineStepCompletedRequirement('Typing some Memories', 1, GameConstants.AchievementOption.less),
 });
 const SilvallyHala = new NPC('Kahuna Hala', [
-    'TODO discovered memory piece/full memory'
+    'TODO discovered memory piece/full memory',
 ], {
     image: 'assets/images/gymLeaders/Hala.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 4, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 4, GameConstants.AchievementOption.less)]),
 });
 const SilvallyOlivia = new NPC('Kahuna Olivia', [
-    'TODO discovered memory piece/full memory'
+    'TODO discovered memory piece/full memory',
 ], {
     image: 'assets/images/gymLeaders/Olivia.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 5, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 5, GameConstants.AchievementOption.less)]),
 });
 const SilvallyNanu = new NPC('Kahuna Nanu', [
-    'TODO discovered memory piece/full memory'
+    'TODO discovered memory piece/full memory',
 ], {
     image: 'assets/images/gymLeaders/Nanu.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 6, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 6, GameConstants.AchievementOption.less)]),
 });
 const SilvallyMina = new NPC('Captain Mina', [
-    'TODO discovered memory piece/full memory'
+    'TODO discovered memory piece/full memory',
 ], {
     image: 'assets/images/gymLeaders/Mina.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 2, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.less)]),
 });
 const SilvallyGladion2 = new NPC('Gladion', [
     'TODO thankings the player',
     'TODO awarding the player',
 ], {
     image: 'assets/images/temporaryBattle/Gladion.png',
-    requirement: new  MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.less)])
+    requirement: new  MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 7, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.less)]),
 });
 const LanaSilvally1 = new NPC('Lana', [
-    'TODO reason needed for dt'
+    'TODO reason needed for dt',
 ], {
     image: 'assets/images/gymLeaders/Lana.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 8, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 9, GameConstants.AchievementOption.less)]),
 });
 const MallowSilvally1 = new NPC('Mallow', [
-    'TODO reason needed for qp'
+    'TODO reason needed for qp',
 ], {
     image: 'assets/images/gymLeaders/Mallow.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 10, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 11, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 10, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 11, GameConstants.AchievementOption.less)]),
 });
 const KiaweSilvally1 = new NPC('Kiawe', [
-    'TODO reason needed for bp'
+    'TODO reason needed for bp',
 ], {
     image: 'assets/images/gymLeaders/Kiawe.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 12, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 13, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 12, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 13, GameConstants.AchievementOption.less)]),
 });
 const SophoclesSilvally1 = new NPC('Sophocles', [
-    'TODO reason needed for money'
+    'TODO reason needed for money',
 ], {
     image: 'assets/images/gymLeaders/Sophocles.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 14, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 15, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 14, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 15, GameConstants.AchievementOption.less)]),
 });
 const VeteranSilvally1 = new NPC('Veteran Aristo', [
-    'TODO reason needed for diamond'
+    'TODO reason needed for diamond',
 ], {
     image: 'assets/images/trainers/Veteran (male).png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 16, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 17, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 16, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 17, GameConstants.AchievementOption.less)]),
 });
 const HapuSilvally1 = new NPC('Hapu', [
-    'TODO reason needed for fp'
+    'TODO reason needed for fp',
 ], {
     image: 'assets/images/gymLeaders/Hapu.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 18, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 19, GameConstants.AchievementOption.less)])
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 18, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 19, GameConstants.AchievementOption.less)]),
 });
 const SilvallyGladion3 = new NPC('Gladion', [
     'TODO thanking the player',
-    'TODO talking about the next silvallys'
+    'TODO talking about the next silvallys',
 ], {
     image: 'assets/images/temporaryBattle/Gladion.png',
-    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 19, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 20, GameConstants.AchievementOption.less)])
-})
-
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 19, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 20, GameConstants.AchievementOption.less)]),
+});
+const GuzmaSilvally = new NPC('Guzma', [
+    'TODO welcoming the player',
+    'TODO Refusing to give silvally',
+    'TODO Challenging player',
+], {
+    image: 'assets/image/trainers/Team Skull Boss(guzma).png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 21, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 22, GameConstants.AchievementOption.less)]),
+});
+const KahiliSilvally = new NPC('Kahili', [
+    'TODO Welcoming the player',
+    'TODO Challenging player with a reward if won',
+], {
+    image: 'assets/image/gymLeaders/Kahili.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 23, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 24, GameConstants.AchievementOption.less)]),
+});
+const PlumeriaSilvally = new NPC('Plumeria', [
+    'TODO Welcoming the player',
+    'TODO Refusing to give the silvally and proposing a battle for it',
+], {
+    image: 'assets/image/temporaryBattle/Plumeria.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 25, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 26, GameConstants.AchievementOption.less)]),
+});
+// UB Quest NPCs
 const RoadsideMotelLooker1 = new NPC('Looker', [
     'I\'m very grateful that you accepted my invitation. My name is Looker. This here is my boss, Chief Anabel, head of the UB Taskforce.',
     'Ever since the incident at Aether Paradise, where you encountered UB-01 Symbiont, also known as Nihilego, we have heard reports of other Symbiont appearing in Alola. And other types of UBs too.',
@@ -4856,8 +4878,8 @@ TownList['Iki Town'] = new Town(
     [IkiTownShop],
     {
         requirements: [new TemporaryBattleRequirement('Hau 1')],
-        npcs: [IkiKahuna], [SilvallyHala]
-    :}
+        npcs: [IkiKahuna, SilvallyHala],
+    }
 );
 TownList['Professor Kukui\'s Lab'] = new Town(
     'Professor Kukui\'s Lab',
@@ -4934,7 +4956,7 @@ TownList['Konikoni City'] = new Town(
     [KonikoniCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Konikoni City'])],
     {
         requirements: [new RouteKillRequirement(10, GameConstants.Region.alola, 9)],
-        npcs: [KonikoniKahuna], [SilvallyOlivia]:
+        npcs: [KonikoniKahuna, SilvallyOlivia],
     }
 );
 TownList['Aether Paradise'] = new Town(
@@ -4959,7 +4981,7 @@ TownList['Malie City'] = new Town(
     [MalieCityShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Malie City']), new MoveToDungeon(dungeonList['Malie Garden']), new DockTownContent()],
     {
         requirements: [new TemporaryBattleRequirement('Ultra Wormhole')],
-        npcs: [MalieKahuna],[SilvallyNanu]
+        npcs: [MalieKahuna, SilvallyNanu],
     }
 );
 TownList['Tapu Village'] = new Town(
@@ -4979,8 +5001,8 @@ TownList['Seafolk Village'] = new Town(
     [SeafolkVillageShop, new ShardTraderShop(GameConstants.ShardTraderLocations['Seafolk Village']), new MoveToDungeon(dungeonList['Mina\'s Houseboat']), new DockTownContent(), TemporaryBattleList['Captain Mina']],
     {
         requirements: [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Aether Foundation'))],
-        npcs: [SeafolkCaptain],[SilvallyMina]
-     }
+        npcs: [SeafolkCaptain, SilvallyMina],
+    }
 );
 TownList['Exeggutor Island'] = new Town(
     'Exeggutor Island',
@@ -5009,7 +5031,7 @@ TownList['Pokémon League Alola'] = new Town(
         requirements:[
             new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Mount Lanakila')),
         ],
-        npcs: [SilvallyGladion1], [SilvallyGladion2], [SilvallyGladion3]
+        npcs: [SilvallyGladion1, SilvallyGladion2, SilvallyGladion3],
     }
 );
 TownList['A Tree Maybe'] = new Town(
@@ -5175,7 +5197,11 @@ TownList['Ten Carat Hill'] = new DungeonTown(
     'Ten Carat Hill',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.MelemeleIsland,
-    [new GymBadgeRequirement(BadgeEnums.FightiniumZ)]
+    [new GymBadgeRequirement(BadgeEnums.FightiniumZ)],
+    [TemporaryBattleList['Kahili Flying Silvally']],
+    {
+        npcs: [KahiliSilvally],
+    }
 );
 TownList['Pikachu Valley'] = new DungeonTown(
     'Pikachu Valley',
@@ -5193,8 +5219,8 @@ TownList['Brooklet Hill'] = new DungeonTown(
     'Brooklet Hill',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.AkalaIsland,
-    [BrookletHillShop],
     [new TemporaryBattleRequirement('Gladion 1')],
+    [BrookletHillShop],
     {
         npcs: [LanaSilvally1],
     }
@@ -5215,9 +5241,9 @@ TownList['Lush Jungle'] = new DungeonTown(
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.AkalaIsland,
     [new RouteKillRequirement(10, GameConstants.Region.alola, 8)],
-    [TemporaryBattleList['Captain Mallow'], TemporaryBattleList['Captain Lana'], [LushJungleShop]],
+    [TemporaryBattleList['Captain Mallow'], TemporaryBattleList['Captain Lana'], LushJungleShop],
     {
-    npcs: [MallowSilvally1],
+        npcs: [MallowSilvally1],
     }
 );
 TownList['Diglett\'s Tunnel'] = new DungeonTown(
@@ -5242,9 +5268,8 @@ TownList['Hokulani Observatory'] = new DungeonTown(
     'Hokulani Observatory',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.UlaulaIsland,
-    [HokulaniObservatoryShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 22)],
-    [TemporaryBattleList['Captain Sophocles']],
+    [TemporaryBattleList['Captain Sophocles'], HokulaniObservatoryShop],
     {
         npcs: [SophoclesSilvally1],
     }
@@ -5265,7 +5290,11 @@ TownList['Po Town'] = new DungeonTown(
     'Po Town',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.UlaulaIsland,
-    [new RouteKillRequirement(10, GameConstants.Region.alola, 17)]
+    [new RouteKillRequirement(10, GameConstants.Region.alola, 17)],
+    [TemporaryBattleList['Guzma Bug Silvally']],
+    {
+        npcs: [GuzmaSilvally],
+    }
 );
 TownList['Aether Foundation'] = new DungeonTown(
     'Aether Foundation',
@@ -5286,8 +5315,8 @@ TownList['Exeggutor Island Hill'] = new DungeonTown(
     'Exeggutor Island Hill',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.PoniIsland,
-    [ExeggutorIslandHillShop],
     [new RouteKillRequirement(10, GameConstants.Region.alola, 25)],
+    [ExeggutorIslandHillShop],
     {
         npcs: [HapuSilvally1],
     }
@@ -5296,7 +5325,11 @@ TownList['Vast Poni Canyon'] = new DungeonTown(
     'Vast Poni Canyon',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.PoniIsland,
-    [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Exeggutor Island Hill'))]
+    [new ClearDungeonRequirement(1, GameConstants.getDungeonIndex('Exeggutor Island Hill'))],
+    [TemporaryBattleList['Plumeria Poison Silvally']],
+    {
+        npcs: [PlumeriaSilvally],
+    }
 );
 TownList['Mina\'s Houseboat'] = new DungeonTown(
     'Mina\'s Houseboat',
@@ -5308,9 +5341,10 @@ TownList['Mount Lanakila'] = new DungeonTown(
     'Mount Lanakila',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.UlaulaIsland,
-    [new TemporaryBattleRequirement('Gladion 3'), [MountLanakilaShop]],
+    [new TemporaryBattleRequirement('Gladion 3')],
+    [MountLanakilaShop],
     {
-        npcs: [LanakilaColress], [VeteranSilvally1]
+        npcs: [LanakilaColress, VeteranSilvally1],
     }
 );
 TownList['Lake of the Sunne and Moone'] = new DungeonTown(

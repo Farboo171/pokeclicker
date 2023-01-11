@@ -2513,6 +2513,45 @@ TemporaryBattleList['Gladion 3'] = new TemporaryBattle(
         imageName: 'Gladion',
     }
 );
+TemporaryBattleList['Guzma Bug Silvally'] = new TemporaryBattle(
+    'Guzma',
+    [
+        new GymPokemon('Golisopod', 234464883, 63),
+        new GymPokemon('Ariados', 234464883, 63),
+        new GymPokemon('Masquerain', 234464883, 63),
+        new GymPokemon('Pinsir', 234464883, 63),
+        new GymPokemon('Scizor', 234464883, 63),
+        new GymPokemon('Silvally (Bug)', 284464883, 63),
+    ],
+    'Tsk. Here take this already, it was useless anyway.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 22)]
+);
+TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
+    'Kahili',
+    [
+        new GymPokemon('Skarmory', 334464883, 63),
+        new GymPokemon('Crobat', 334464883, 63),
+        new GymPokemon('Oricorio (Baile)', 334464883, 63),
+        new GymPokemon('Mandibuzz', 334464883, 63),
+        new GymPokemon('Toucannon', 334464883, 63),
+        new GymPokemon('Silvally (Flying)', 384464883, 63),
+    ],
+    'Here is your reward, just like i promissed',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 24)]
+);
+TemporaryBattleList['Plumeria Poison Silvally'] = new TemporaryBattle(
+    'Plumeria',
+    [
+        new GymPokemon('Skarmory', 334464883, 63),
+        new GymPokemon('Crobat', 334464883, 63),
+        new GymPokemon('Oricorio (Baile)', 334464883, 63),
+        new GymPokemon('Mandibuzz', 334464883, 63),
+        new GymPokemon('Toucannon', 334464883, 63),
+        new GymPokemon('Silvally (Flying)', 384464883, 63),
+    ],
+    'Ugh, why do i always lose to you? well have this thing for defeating me.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 26)]
+);
 TemporaryBattleList.Anabel = new TemporaryBattle(
     'Anabel',
     [

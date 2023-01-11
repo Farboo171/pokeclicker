@@ -1,7 +1,7 @@
 /**
  * Static class used to handle Quest Lines
  */
-class  {
+class QuestLineHelper {
 
     // Kanto QuestLines
     public static createTutorial() {
@@ -1373,10 +1373,10 @@ class  {
         SilvallyTypesQuestLine.addQuest(talkToPoniLocals);
 
         const SilvallyGladionReward1 = () => {
-            App.game.party.getPokemonByName('Silvally (Fighting)');
-            App.game.party.getPokemonByName('Silvally (Rock)');
-            App.game.party.getPokemonByName('Silvally (Dark)');
-            App.game.party.getPokemonByName('Silvally (Fairy)');
+            App.game.party.gainPokemonByName('Silvally (Fighting)');
+            App.game.party.gainPokemonByName('Silvally (Rock)');
+            App.game.party.gainPokemonByName('Silvally (Dark)');
+            App.game.party.gainPokemonByName('Silvally (Fairy)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Gladion awarded you 4 Silvally\'s!',
@@ -1388,7 +1388,7 @@ class  {
         const talkToGladion2 = new TalkToNPCQuest(SilvallyGladion2, 'Talk to Gladion in the Pokémon League Alola and tell him what you found out about Silvally\'s memories.', SilvallyGladionReward1);
         SilvallyTypesQuestLine.addQuest(talkToGladion2);
 
-        createMultiTypeCaptureQuest([PokemonType.Water, PokemonType.Grass, PokemonType.Fire, PokemonType.Electric, PokemonType.Ground, PokemonType.Ice], 'Get some essence before looking for more Silvally\'s memories. Capture 100 Water, Grass, Electric, Ground, Ice and Dragon types.');
+        createMultiTypeCaptureQuest([PokemonType.Water, PokemonType.Grass, PokemonType.Fire, PokemonType.Electric, PokemonType.Ground, PokemonType.Ice], 'Get some essence before looking for more Silvally\'s memories. Capture 100 Water, Grass, Fire, Electric, Ground and Ice types.');
 
         const talkToLanaSilvally = new TalkToNPCQuest(LanaSilvally1, 'Talk to Lana in Brooklet Hill to find out if she knows something about Silvally\'s memories.');
         SilvallyTypesQuestLine.addQuest(talkToLanaSilvally);
@@ -1428,6 +1428,56 @@ class  {
 
         const talkToGladion3 = new TalkToNPCQuest(SilvallyGladion3, 'Go show Gladion those Silvallys in the Pokémon League Alola');
         SilvallyTypesQuestLine.addQuest(talkToGladion3);
+
+        createMultiTypeCaptureQuest([PokemonType.Bug, PokemonType.Flying, PokemonType.Poison, PokemonType.Ghost, PokemonType.Psychic, PokemonType.Steel, PokemonType.Dragon], 'Get some training before looking for more Silvally\'s memories. Capture 100 Bug, Flying, Poison, Ghost, Psychic, Steel and Dragon types.');
+
+        const talkToBugSilvally = new TalkToNPCQuest(GuzmaSilvally, 'Go ask Guzma in Po Town to find out if he has seen any Silvallys near Po Town');
+        SilvallyTypesQuestLine.addQuest(talkToBugSilvally);
+
+        const BugSilvallyReward = () => {
+            App.game.party.getPokemonByName('Silvally (Bug)');
+        };
+
+        const BugSilvallyBattle = new CustomQuest(
+            1,
+            BugSilvallyReward,
+            'Defeat Guzma to recover the Silvally!',
+            () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Guzma Bug Silvally')](),
+            0
+        );
+        SilvallyTypesQuestLine.addQuest(BugSilvallyBattle);
+
+        const talkToFlyingSilvally = new TalkToNPCQuest(KahiliSilvally, 'Some Melemele island habitants have seen Kahili walking with a weird Pokémon near Ten Carat Hill, go find her in Ten Carat Hill.');
+        SilvallyTypesQuestLine.addQuest(talkToFlyingSilvally);
+
+        const FlyingSilvallyReward = () => {
+            App.game.party.getPokemonByName('Silvally (Flying)');
+        };
+
+        const FlyingSilvallyBattle = new CustomQuest(
+            1,
+            FlyingSilvallyReward,
+            'Defeat Kahili for a reward!',
+            () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Kahili Flying Silvally')](),
+            0
+        );
+        SilvallyTypesQuestLine.addQuest(FlyingSilvallyBattle);
+
+        const talkToPoisonSilvally = new TalkToNPCQuest(PlumeriaSilvally, 'Some Poni island habitants have spotted alot of movimentation of Team Skull Grunts in Vast Poni Canyon. Go check it out.');
+        SilvallyTypesQuestLine.addQuest(talkToPoisonSilvally);
+
+        const PoisonSilvallyReward = () => {
+            App.game.party.getPokemonByName('Silvally (Poison)');
+        };
+
+        const PoisonSilvallyBattle = new CustomQuest(
+            1,
+            PoisonSilvallyReward,
+            'Defeat Plumeria to recover the Silvally!',
+            () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Plumeria Poison Silvally')](),
+            0
+        );
+        SilvallyTypesQuestLine.addQuest(PoisonSilvallyBattle);
 
         App.game.quests.questLines().push(SilvallyTypesQuestLine);
 
