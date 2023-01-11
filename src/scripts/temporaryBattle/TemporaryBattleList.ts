@@ -2529,12 +2529,12 @@ TemporaryBattleList['Guzma Bug Silvally'] = new TemporaryBattle(
 TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
     'Kahili',
     [
-        new GymPokemon('Skarmory', 334464883, 63),
-        new GymPokemon('Crobat', 334464883, 63),
-        new GymPokemon('Oricorio (Baile)', 334464883, 63),
-        new GymPokemon('Mandibuzz', 334464883, 63),
-        new GymPokemon('Toucannon', 334464883, 63),
-        new GymPokemon('Silvally (Flying)', 384464883, 63),
+        new GymPokemon('Skarmory', 284464883, 63),
+        new GymPokemon('Crobat', 284464883, 63),
+        new GymPokemon('Oricorio (Baile)', 284464883, 63),
+        new GymPokemon('Mandibuzz', 284464883, 63),
+        new GymPokemon('Toucannon', 284464883, 63),
+        new GymPokemon('Silvally (Flying)', 334464883, 63),
     ],
     'Here is your reward, just like i promissed',
     [new QuestLineStepCompletedRequirement('Typing some Memories', 24)]
@@ -2542,15 +2542,67 @@ TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
 TemporaryBattleList['Plumeria Poison Silvally'] = new TemporaryBattle(
     'Plumeria',
     [
-        new GymPokemon('Skarmory', 334464883, 63),
+        new GymPokemon('Gengar', 334464883, 63),
+        new GymPokemon('Alolan Muk', 334464883, 63),
         new GymPokemon('Crobat', 334464883, 63),
-        new GymPokemon('Oricorio (Baile)', 334464883, 63),
-        new GymPokemon('Mandibuzz', 334464883, 63),
-        new GymPokemon('Toucannon', 334464883, 63),
-        new GymPokemon('Silvally (Flying)', 384464883, 63),
+        new GymPokemon('Toxapex', 334464883, 63),
+        new GymPokemon('Salazzle', 334464883, 63),
+        new GymPokemon('Silvally (Poison)', 384464883, 63),
     ],
-    'Ugh, why do i always lose to you? well have this thing for defeating me.',
+    'Ugh, why do i always lose to you? well, have this thing for defeating me.',
     [new QuestLineStepCompletedRequirement('Typing some Memories', 26)]
+);
+TemporaryBattleList['Acerola Ghost Silvally'] = new TemporaryBattle(
+    'Acerola',
+    [
+        new GymPokemon('Banette', 384464883, 63),
+        new GymPokemon('Drifblim', 384464883, 63),
+        new GymPokemon('Dhelmise', 384464883, 63),
+        new GymPokemon('Froslass', 384464883, 63),
+        new GymPokemon('Palossand', 384464883, 63),
+        new GymPokemon('Silvally (Ghost)', 434464883, 63),
+    ],
+    'TODO defeat text.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 28)]
+);
+TemporaryBattleList['Faba Psychic Silvally'] = new TemporaryBattle(
+    'Faba',
+    [
+        new GymPokemon('Claydol', 434464883, 63),
+        new GymPokemon('Bruxish', 434464883, 63),
+        new GymPokemon('Alolan Raichu', 434464883, 63),
+        new GymPokemon('Alakazam', 434464883, 63),
+        new GymPokemon('Hypno', 434464883, 63),
+        new GymPokemon('Silvally (Psychic)', 484464883, 63),
+    ],
+    'TODO defeat text.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 30)]
+);
+TemporaryBattleList['Molayne Steel Silvally'] = new TemporaryBattle(
+    'Molayne',
+    [
+        new GymPokemon('Klefki', 484464883, 63),
+        new GymPokemon('Bisharp', 484464883, 63),
+        new GymPokemon('Magnezone', 484464883, 63),
+        new GymPokemon('Metagross', 484464883, 63),
+        new GymPokemon('Alolan Dugtrio', 484464883, 63),
+        new GymPokemon('Silvally (Steel)', 534464883, 63),
+    ],
+    'TODO defeat text.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 32)]
+);
+TemporaryBattleList['Ryuki Dragon Silvally'] = new TemporaryBattle(
+    'Ryuki',
+    [
+        new GymPokemon('Garchomp', 534464883, 63),
+        new GymPokemon('Drampa', 534464883, 63),
+        new GymPokemon('Turtonator', 534464883, 63),
+        new GymPokemon('Dragonite', 534464883, 63),
+        new GymPokemon('Kommo-o', 534464883, 63),
+        new GymPokemon('Silvally (Dragon)', 584464883, 63),
+    ],
+    'TODO defeat text.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 34)]
 );
 TemporaryBattleList.Anabel = new TemporaryBattle(
     'Anabel',

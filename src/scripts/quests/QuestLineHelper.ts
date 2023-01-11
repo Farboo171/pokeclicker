@@ -1479,6 +1479,21 @@ class QuestLineHelper {
         );
         SilvallyTypesQuestLine.addQuest(PoisonSilvallyBattle);
 
+        const talkToGhostSilvally = new TalkToNPCQuest(AcerolaSilvally, 'Acerola has been seen with a Silvally inside the Thrifty Megamart. Go find her');
+
+        const GhostSilvallyReward = () => {
+            App.game.party.getPokemonByName('Silvally (Ghost)');
+        };
+
+        const GhostSilvallyBattle = new CustomQuest(
+            1,
+            GhostSilvallyReward,
+            'Defeat Acerola to get the Silvally back.',
+            () => App.game.statistics.temporaryBattleDefeated[GameConstants.getTemporaryBattlesIndex('Acerola Ghost Silvally')](),
+            0
+        );
+        SilvallyTypesQuestLine.addQuest(GhostSilvallyBattle);
+
         App.game.quests.questLines().push(SilvallyTypesQuestLine);
 
     }

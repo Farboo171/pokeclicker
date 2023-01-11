@@ -4696,6 +4696,13 @@ const PlumeriaSilvally = new NPC('Plumeria', [
     image: 'assets/image/temporaryBattle/Plumeria.png',
     requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 25, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 26, GameConstants.AchievementOption.less)]),
 });
+const AcerolaSilvally = new NPC('Acerola', [
+    'TODO Welcoming the player',
+    'TODO challenging the player for battle',
+], {
+    image: 'assets/image/gymLeaders/Acerola.png',
+    requirement: new MultiRequirement([new QuestLineStepCompletedRequirement('Typing some Memories', 27, GameConstants.AchievementOption.more), new QuestLineStepCompletedRequirement('Typing some Memories', 28, GameConstants.AchievementOption.less)]),
+});
 // UB Quest NPCs
 const RoadsideMotelLooker1 = new NPC('Looker', [
     'I\'m very grateful that you accepted my invitation. My name is Looker. This here is my boss, Chief Anabel, head of the UB Taskforce.',
@@ -5278,7 +5285,11 @@ TownList['Thrifty Megamart'] = new DungeonTown(
     'Thrifty Megamart',
     GameConstants.Region.alola,
     GameConstants.AlolaSubRegions.UlaulaIsland,
-    [new RouteKillRequirement(10, GameConstants.Region.alola, 14)]
+    [new RouteKillRequirement(10, GameConstants.Region.alola, 14)],
+    [TemporaryBattleList['Acerola Ghost Silvally']],
+    {
+        npcs: [AcerolaSilvally],
+    }
 );
 TownList['Ula\'ula Meadow'] = new DungeonTown(
     'Ula\'ula Meadow',
