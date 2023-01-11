@@ -1353,7 +1353,7 @@ class QuestLineHelper {
 
         const createMultiTypeCaptureQuest = (types: Array<PokemonType>, description: string) => {
             const quest = new MultipleQuestsQuest(types.map(type => {
-                return new CapturePokemonTypesQuest(100, undefined, type);
+                return new CapturePokemonTypesQuest(10, undefined, type);
             }), description);
             SilvallyTypesQuestLine.addQuest(quest);
         };
