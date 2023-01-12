@@ -1435,7 +1435,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToBugSilvally);
 
         const BugSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Bug)');
+            App.game.party.gainPokemonByName('Silvally (Bug)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Guzma gives you a Silvally (Bug)!',
@@ -1458,7 +1458,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToFlyingSilvally);
 
         const FlyingSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Flying)');
+            App.game.party.gainPokemonByName('Silvally (Flying)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Kahili gives you a Silvally (Flying)!',
@@ -1481,7 +1481,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToPoisonSilvally);
 
         const PoisonSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Poison)');
+            App.game.party.gainPokemonByName('Silvally (Poison)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Plumeria gives you a Silvally (Poison)!',
@@ -1504,7 +1504,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToGhostSilvally);
 
         const GhostSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Ghost)');
+            App.game.party.gainPokemonByName('Silvally (Ghost)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Acerola gives you a Silvally (Dragon)!',
@@ -1527,7 +1527,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToPsychicSilvally);
 
         const PsychicSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Psychic)');
+            App.game.party.gainPokemonByName('Silvally (Psychic)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Faba gives you a Silvally (Psychic)!',
@@ -1550,7 +1550,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToPsychicSilvally);
 
         const SteelSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Steel)');
+            App.game.party.gainPokemonByName('Silvally (Steel)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Molayne gives you a Silvally (Steel)!',
@@ -1573,7 +1573,7 @@ class QuestLineHelper {
         SilvallyTypesQuestLine.addQuest(talkToPsychicSilvally);
 
         const DragonSilvallyReward = () => {
-            App.game.party.getPokemonByName('Silvally (Dragon)');
+            App.game.party.gainPokemonByName('Silvally (Dragon)');
             Notifier.notify({
                 title: SilvallyTypesQuestLine.name,
                 message: 'Ryuki gives you a Silvally (Dragon)!',
