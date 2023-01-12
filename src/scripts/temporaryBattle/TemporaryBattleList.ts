@@ -2514,7 +2514,7 @@ TemporaryBattleList['Gladion 3'] = new TemporaryBattle(
     }
 );
 TemporaryBattleList['Guzma Bug Silvally'] = new TemporaryBattle(
-    'Guzma',
+    'Guzma Bug Silvally',
     [
         new GymPokemon('Golisopod', 234464883, 63),
         new GymPokemon('Ariados', 234464883, 63),
@@ -2524,10 +2524,15 @@ TemporaryBattleList['Guzma Bug Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Bug)', 284464883, 63),
     ],
     'Tsk. Here take this already, it was useless anyway.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 22)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 22)],
+    undefined,
+    {
+        displayName: 'Team Skull Boss Guzma',
+        imageName: 'Team Skull Boss (guzma)',
+    }
 );
 TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
-    'Kahili',
+    'Kahili Flying Silvally',
     [
         new GymPokemon('Skarmory', 284464883, 63),
         new GymPokemon('Crobat', 284464883, 63),
@@ -2537,10 +2542,15 @@ TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Flying)', 334464883, 63),
     ],
     'Here is your reward, just like i promissed',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 24)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 24)],
+    undefined,
+    {
+        displayName: 'Kahili',
+        imageName: 'Kahili',
+    }
 );
 TemporaryBattleList['Plumeria Poison Silvally'] = new TemporaryBattle(
-    'Plumeria',
+    'Plumeria Poison Silvally',
     [
         new GymPokemon('Gengar', 334464883, 63),
         new GymPokemon('Alolan Muk', 334464883, 63),
@@ -2550,10 +2560,15 @@ TemporaryBattleList['Plumeria Poison Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Poison)', 384464883, 63),
     ],
     'Ugh, why do i always lose to you? well, have this thing for defeating me.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 26)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 26)],
+    undefined,
+    {
+        displayName: 'Team Skull Admim Plumeria',
+        imageName: 'Plumeria',
+    }
 );
 TemporaryBattleList['Acerola Ghost Silvally'] = new TemporaryBattle(
-    'Acerola',
+    'Acerola Ghost Silvally',
     [
         new GymPokemon('Banette', 384464883, 63),
         new GymPokemon('Drifblim', 384464883, 63),
@@ -2563,10 +2578,15 @@ TemporaryBattleList['Acerola Ghost Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Ghost)', 434464883, 63),
     ],
     'TODO defeat text.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 28)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 28)],
+    undefined,
+    {
+        displayName: 'Acerola',
+        imageName: 'Acerola',
+    }
 );
 TemporaryBattleList['Faba Psychic Silvally'] = new TemporaryBattle(
-    'Faba',
+    'Faba Pscyhic Silvally',
     [
         new GymPokemon('Claydol', 434464883, 63),
         new GymPokemon('Bruxish', 434464883, 63),
@@ -2576,10 +2596,15 @@ TemporaryBattleList['Faba Psychic Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Psychic)', 484464883, 63),
     ],
     'TODO defeat text.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 30)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 30)],
+    undefined,
+    {
+        displayName: 'Aether Branch Chief Faba',
+        imageName: 'Aether Branch Chief (faba)',
+    }
 );
 TemporaryBattleList['Molayne Steel Silvally'] = new TemporaryBattle(
-    'Molayne',
+    'Molayne Steel Silvally',
     [
         new GymPokemon('Klefki', 484464883, 63),
         new GymPokemon('Bisharp', 484464883, 63),
@@ -2589,10 +2614,15 @@ TemporaryBattleList['Molayne Steel Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Steel)', 534464883, 63),
     ],
     'TODO defeat text.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 32)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 32)],
+    undefined,
+    {
+        displayName: 'Molayne',
+        imageName: 'Molayne',
+    }
 );
 TemporaryBattleList['Ryuki Dragon Silvally'] = new TemporaryBattle(
-    'Ryuki',
+    'Ryuki Dragon Silvally',
     [
         new GymPokemon('Garchomp', 534464883, 63),
         new GymPokemon('Drampa', 534464883, 63),
@@ -2602,7 +2632,12 @@ TemporaryBattleList['Ryuki Dragon Silvally'] = new TemporaryBattle(
         new GymPokemon('Silvally (Dragon)', 584464883, 63),
     ],
     'TODO defeat text.',
-    [new QuestLineStepCompletedRequirement('Typing some Memories', 34)]
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 34)],
+    undefined,
+    {
+        displayName: 'Ryuki',
+        imageName: 'Ryuki',
+    }
 );
 TemporaryBattleList.Anabel = new TemporaryBattle(
     'Anabel',
