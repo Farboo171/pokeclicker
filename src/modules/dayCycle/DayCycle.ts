@@ -2,11 +2,10 @@
 import { Computed } from 'knockout';
 import DayCycleMoment from './DayCycleMoment';
 import DayCyclePart from './DayCyclePart';
-import GameHelper from '../GameHelper';
 
 export default class DayCycle {
     public static currentDayCyclePart: Computed<DayCyclePart> = ko.pureComputed(() => {
-        const curHour = GameHelper.currentTime().getHours();
+        const curHour = (new Date()).getHours();
         let dayCyclePart: DayCyclePart;
 
         if (curHour === 17) {
