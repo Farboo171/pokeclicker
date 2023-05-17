@@ -3457,6 +3457,132 @@ TemporaryBattleList['Gladion 3'] = new TemporaryBattle(
         imageName: 'Gladion',
     }
 );
+TemporaryBattleList['Guzma Bug Silvally'] = new TemporaryBattle(
+    'Guzma Bug Silvally',
+    [
+        new GymPokemon('Golisopod', 184464883, 63),
+        new GymPokemon('Ariados', 184464883, 63),
+        new GymPokemon('Masquerain', 184464883, 63),
+        new GymPokemon('Pinsir', 184464883, 63),
+        new GymPokemon('Scizor', 184464883, 63),
+        new GymPokemon('Silvally (Bug)', 204464883, 63),
+    ],
+    'Tsk. Here take this already, it was useless anyway.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 22)],
+    undefined,
+    {
+        displayName: 'Team Skull Boss Guzma',
+        imageName: 'Team Skull Boss (guzma)',
+    }
+);
+TemporaryBattleList['Kahili Flying Silvally'] = new TemporaryBattle(
+    'Kahili Flying Silvally',
+    [
+        new GymPokemon('Skarmory', 189464883, 63),
+        new GymPokemon('Crobat', 189464883, 63),
+        new GymPokemon('Oricorio (Baile)', 189464883, 63),
+        new GymPokemon('Mandibuzz', 189464883, 63),
+        new GymPokemon('Toucannon', 189464883, 63),
+        new GymPokemon('Silvally (Flying)', 209464883, 63),
+    ],
+    'Here is your reward, just like i promissed',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 24)],
+    undefined,
+    {
+        displayName: 'Kahili',
+        imageName: 'Kahili',
+    }
+);
+TemporaryBattleList['Plumeria Poison Silvally'] = new TemporaryBattle(
+    'Plumeria Poison Silvally',
+    [
+        new GymPokemon('Gengar', 194464883, 63),
+        new GymPokemon('Alolan Muk', 194464883, 63),
+        new GymPokemon('Crobat', 194464883, 63),
+        new GymPokemon('Toxapex', 194464883, 63),
+        new GymPokemon('Salazzle', 194464883, 63),
+        new GymPokemon('Silvally (Poison)', 214464883, 63),
+    ],
+    'Ugh, why do i always lose to you? well, have this thing for defeating me.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 26)],
+    undefined,
+    {
+        displayName: 'Team Skull Admim Plumeria',
+        imageName: 'Plumeria',
+    }
+);
+TemporaryBattleList['Acerola Ghost Silvally'] = new TemporaryBattle(
+    'Acerola Ghost Silvally',
+    [
+        new GymPokemon('Banette', 199464883, 63),
+        new GymPokemon('Drifblim', 199464883, 63),
+        new GymPokemon('Dhelmise', 199464883, 63),
+        new GymPokemon('Froslass', 199464883, 63),
+        new GymPokemon('Palossand', 199464883, 63),
+        new GymPokemon('Silvally (Ghost)', 219464883, 63),
+    ],
+    'That was an amazing battle! You really love your Pokémons don\'t you. Anyway, take this Silvally as you\'ve won against me.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 28)],
+    undefined,
+    {
+        displayName: 'Captain Acerola',
+        imageName: 'Acerola',
+    }
+);
+TemporaryBattleList['Faba Psychic Silvally'] = new TemporaryBattle(
+    'Faba Psychic Silvally',
+    [
+        new GymPokemon('Claydol', 204464883, 63),
+        new GymPokemon('Bruxish', 204464883, 63),
+        new GymPokemon('Alolan Raichu', 204464883, 63),
+        new GymPokemon('Alakazam', 204464883, 63),
+        new GymPokemon('Hypno', 204464883, 63),
+        new GymPokemon('Silvally (Psychic)', 224464883, 63),
+    ],
+    'H-h-how did you? i can\'t believe this. You can take this Silvally as an act of kindness from the brach chief.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 30)],
+    undefined,
+    {
+        displayName: 'Aether Branch Chief Faba',
+        imageName: 'Aether Branch Chief (faba)',
+    }
+);
+TemporaryBattleList['Molayne Steel Silvally'] = new TemporaryBattle(
+    'Molayne Steel Silvally',
+    [
+        new GymPokemon('Klefki', 209464883, 63),
+        new GymPokemon('Bisharp', 209464883, 63),
+        new GymPokemon('Magnezone', 209464883, 63),
+        new GymPokemon('Metagross', 209464883, 63),
+        new GymPokemon('Alolan Dugtrio', 209464883, 63),
+        new GymPokemon('Silvally (Steel)', 229464883, 63),
+    ],
+    'You certainly are a strong trainer, i hope we can battle again soon. Here, take the Silvally for helping me train a little, all the Elite four stuff is being really hard.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 32)],
+    undefined,
+    {
+        displayName: 'Molayne',
+        imageName: 'Molayne',
+    }
+);
+TemporaryBattleList['Ryuki Dragon Silvally'] = new TemporaryBattle(
+    'Ryuki Dragon Silvally',
+    [
+        new GymPokemon('Garchomp', 214464883, 63),
+        new GymPokemon('Drampa', 214464883, 63),
+        new GymPokemon('Turtonator', 214464883, 63),
+        new GymPokemon('Dragonite', 214464883, 63),
+        new GymPokemon('Kommo-o', 214464883, 63),
+        new GymPokemon('Silvally (Dragon)', 234464883, 63),
+    ],
+    'I\'m gonna belt out everything inside of me! I\'ve gotta encourage my Pokémon to keep rocking!. Here, take this thing you call Silvally. They were a really good buddy, but now i gotta say goodbye.',
+    [new QuestLineStepCompletedRequirement('Typing some Memories', 34)],
+    undefined,
+    {
+        displayName: 'Ryuki',
+        imageName: 'Ryuki',
+    }
+);
 TemporaryBattleList.Anabel = new TemporaryBattle(
     'Anabel',
     [
